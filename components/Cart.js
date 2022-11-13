@@ -2,6 +2,7 @@ export default class Cart {
   static template = document.querySelector('#cart-template').content;
   static totalPrice = document.querySelector('.total-price');
   static container = document.querySelector('.container_foods');
+  static buttonBuy = document.querySelector('.button__buy');
 
   constructor() {
     this._arr = [];
@@ -14,15 +15,25 @@ export default class Cart {
       return sum + elem;
     }, 0);
     Cart.totalPrice.textContent = `$${sum}`;
-    return price;
   }
 
-  renderCart(price, name) {
+  buttonBuyClickHandler() {
+    Cart.buttonBuy.addEventListener('click', () => {
+      alert(`Вы сделали покупку на сумму: ${Cart.totalPrice.textContent}`);
+      Cart.container.innerHTML = '';
+      this._arr = [];
+      Cart.totalPrice.textContent = 0;
+      Cart.buttonBuy.disabled = true;
+    })
+  }
+
+  render(price, name) {
     const clone = Cart.template.cloneNode(true).children[0];
     clone.querySelector('.cart__name').textContent = name;
     clone.querySelector('.cart__price').textContent = price;
 
     this.getSum(price)
+    Cart.buttonBuy.disabled = false;
 
     Cart.container.append(clone);
   }

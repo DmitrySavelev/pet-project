@@ -11,23 +11,4 @@ cards.forEach(item => {
   product.render(item);
 });
 
-
-
-
-
-
-// cards.forEach(item => {
-//   const product = new Product(cart.renderCart, cart.getSum);
-//   // cardsContainer.append(card.render(item));
-//   product.render(item);
-// });
-
-
-// const obj = {
-//   name: 'Dima',
-//   age: 29,
-// }
-// const eee = new Cart();
-
-// console.log(eee.cons());
-
+cart.buttonBuyClickHandler();

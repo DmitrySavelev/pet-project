@@ -6,10 +6,45 @@ body {
   width: 100%;
 }
 
+/* header header header header header header header header header header header header header header header  */
+
+.header {
+  box-sizing: border-box;
+  height: 120px;
+  background-color: #ffcf00;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
+.links  {
+  font-size: 23px;
+  font-weight: 600;
+  display: flex;
+  gap: 60px;
+  margin-left: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.privateOffice {
+  margin-left: auto;
+}
+
+/* content content content content content content content content content content content content content  */
+
 .content {
   display: flex;
   min-height: 100vh;
-  /* background-color: #E63F31; */
 }
 
 .cards {
@@ -25,23 +60,23 @@ body {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  /* background-color: #2B7BED; */
-  height: 300px;
+  height: 230px;
   border: 2px solid #000;
 }
 
 .image {
   width: 150px;
   height: 150px;
-  border: 1px solid #000;
 }
 
 .card__name {
   text-align: center;
+  margin: 0;
 }
 
 .price {
   text-align: center;
+  margin: 10px;
 }
 
 .button__cart {
@@ -58,7 +93,6 @@ button:hover {
 /* КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА*/
 
 .aside {
-  /* background-color: #FCC31F; */
   display: flex;
   justify-content: center;
   flex: 0 0 250px;
@@ -68,6 +102,7 @@ button:hover {
 .cart {
   padding: 30px;
   min-height: 200px;
+  width: 180px;
 }
 
 .cart__article {
@@ -121,5 +156,5 @@ button:hover {
 }
 
 .image_opened {
-display: inline;
+  display: inline;
 }

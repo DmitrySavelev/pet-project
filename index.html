@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,17 @@
 </head>
 <body>
   <div class="page">
+    <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="logo">
+      <nav class="links">
+        <a href="#" class="link shop">Магазин</a>
+        <a href="#" class="link about">О нас</a>
+        <a href="#" class="link contacts">Контакты</a>
+      </nav>
+      <a href="#" class="privateOffice">
+        <img src="./images/lego-head.png" alt="private office" >
+      </a>
+    </header>
     <main class="content">
       <section class="cards">
       </section>
@@ -28,7 +39,7 @@
             <span>Total (USD)</span>
             <span class="total-price">$0</span>
           </div>
-          <button class="button__buy">Купить</button>
+          <button class="button__buy" disabled>Купить</button>
         </div>
       </aside>
     </main>
@@ -36,7 +47,7 @@
       <div class="card">
         <img src="images/2.jpg" alt="изображение товара" class="image">
         <h4 class="card__name">Товар 1</h4>
-        <h5 class="price">$100</h5>
+        <span class="price">$100</span>
         <button class="button__cart">add to cart</button>
       </div>
     </template>

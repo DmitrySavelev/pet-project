@@ -13,16 +13,10 @@ export default class Product {
     const name = element.querySelector('.card__name').textContent;
 
     button.addEventListener('click', () => {
-      this._cart.renderCart(price, name);
-      const imageDone = document.querySelector('.image-done');
-      imageDone.classList.add('image_opened');
-      setInterval(() => {
-        imageDone.classList.remove('image_opened');
-      }, 1500);
-
+      this._cart.render(price, name);
     });
   }
-
+ 
   render(card) {
     const clone = Product.template.cloneNode(true).children[0];
     clone.querySelector('.image').src = card.src;
