@@ -1,0 +1,148 @@
+const cards = [
+  {
+    src: './images/2.jpg',
+    name: 'Товар 1',
+    price: '100',
+    info: 'info1',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 2',
+    price: '200',
+    info: 'info2',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 3',
+    price: '300',
+    info: 'info3',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 4',
+    price: '400',
+    info: 'info4',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 5',
+    price: '500',
+    info: 'info5',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 6',
+    price: '600',
+    info: 'info6',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 1',
+    price: '100',
+    info: 'info1',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 2',
+    price: '200',
+    info: 'info2',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 3',
+    price: '300',
+    info: 'info3',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 4',
+    price: '400',
+    info: 'info4',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 5',
+    price: '500',
+    info: 'info5',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 6',
+    price: '600',
+    info: 'info6',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 1',
+    price: '100',
+    info: 'info1',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 2',
+    price: '200',
+    info: 'info2',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 3',
+    price: '300',
+    info: 'info3',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 4',
+    price: '400',
+    info: 'info4',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 5',
+    price: '500',
+    info: 'info5',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 6',
+    price: '600',
+    info: 'info6',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 1',
+    price: '100',
+    info: 'info1',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 2',
+    price: '200',
+    info: 'info2',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 3',
+    price: '300',
+    info: 'info3',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 4',
+    price: '400',
+    info: 'info4',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 5',
+    price: '500',
+    info: 'info5',
+  },
+  {
+    src: './images/2.jpg',
+    name: 'Товар 6',
+    price: '600',
+    info: 'info6',
+  },
+]
+
+export default cards;

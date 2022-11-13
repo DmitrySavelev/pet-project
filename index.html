@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet-project</title>
+  <link rel="stylesheet" href="pages/index.css">
+  <script src="pages/index.js" type="module"></script>
+</head>
+<body>
+  <div class="page">
+    <main class="content">
+      <section class="cards">
+      </section>
+      <div class="image-done">
+        <img src="./images/done.png" alt="done">
+      </div>
+      <aside class="aside">
+        <div class="cart">
+          <div class="wrapper-cart">
+            <h4 class="cart__article">Cart</h4>
+            <img src="./images/cart.png" alt="значок корзины" class="badge-cart">
+          </div>
+          <div class="container_foods">
+          </div>
+          <div class="total">
+            <span>Total (USD)</span>
+            <span class="total-price">$0</span>
+          </div>
+          <button class="button__buy">Купить</button>
+        </div>
+      </aside>
+    </main>
+    <template id="template_card">
+      <div class="card">
+        <img src="images/2.jpg" alt="изображение товара" class="image">
+        <h4 class="card__name">Товар 1</h4>
+        <h5 class="price">$100</h5>
+        <button class="button__cart">add to cart</button>
+      </div>
+    </template>
+    <template id="cart-template">
+      <div class="food">
+        <span class="cart__name">Товар 1</span>
+        <span class="cart__price">$100</span>
+      </div>
+    </template>
+  </div>
+</body>
+</html>

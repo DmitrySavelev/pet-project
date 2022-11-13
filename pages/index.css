@@ -1,0 +1,125 @@
+body {
+  width: 100%;
+}
+
+.page {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  /* background-color: #E63F31; */
+}
+
+.cards {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  /* background-color: #2B7BED; */
+  height: 300px;
+  border: 2px solid #000;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #000;
+}
+
+.card__name {
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+}
+
+.button__cart {
+  background-color: #269846;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  color: black;
+}
+
+/* КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА*/
+
+.aside {
+  /* background-color: #FCC31F; */
+  display: flex;
+  justify-content: center;
+  flex: 0 0 250px;
+  border: 1px solid #000;
+}
+
+.cart {
+  padding: 30px;
+  min-height: 200px;
+}
+
+.cart__article {
+  margin: 8px 0 0 0;
+}
+
+.badge-cart {
+  width: 32px;
+  height: 32px;
+}
+
+.wrapper-cart {
+  background-color: rgb(238, 245, 31);
+  border: 2px solid #000;
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+  justify-content: center;
+  border-radius: 5%;
+}
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  gap: 30px;
+  margin-top: 10px;
+  background-color: #2f7cee;
+  padding: 0 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: rgb(238, 245, 31);
+  padding: 0 10px;
+}
+
+.button__buy {
+  margin-top: 30px;
+  justify-content: center;
+  background-color: #0d6747;
+  color: white;
+}
+
+.image-done {
+  display: none;
+}
+
+.image_opened {
+display: inline;
+}
