@@ -1,8 +1,8 @@
 export default class Cart {
-  static template = document.querySelector('#cart-template').content;
-  static totalPrice = document.querySelector('.total-price');
+  static template = document.querySelector('#template-cart').content;
+  static totalPrice = document.querySelector('.cart__total-price');
   static container = document.querySelector('.container_foods');
-  static buttonBuy = document.querySelector('.button__buy');
+  static buttonBuy = document.querySelector('.cart__button-buy');
 
   constructor() {
     this._arr = [];
@@ -19,7 +19,7 @@ export default class Cart {
 
   buttonBuyClickHandler() {
     Cart.buttonBuy.addEventListener('click', () => {
-      alert(`Вы сделали покупку на сумму: ${Cart.totalPrice.textContent}`);
+      console.log(`Вы сделали покупку на сумму: ${Cart.totalPrice.textContent}`);
       Cart.container.innerHTML = '';
       this._arr = [];
       Cart.totalPrice.textContent = 0;

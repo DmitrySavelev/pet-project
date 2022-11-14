@@ -1,0 +1,9 @@
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  gap: 30px;
+  margin-top: 30px;
+  background-color: #ffcf00;
+  padding: 0 10px;
+}

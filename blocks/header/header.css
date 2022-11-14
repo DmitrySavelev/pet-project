@@ -1,0 +1,9 @@
+.header {
+  box-sizing: border-box;
+  height: 120px;
+  background-color: #ffcf00;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}

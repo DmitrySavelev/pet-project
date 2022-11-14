@@ -1,5 +1,6 @@
 export default class Product {
-  static template = document.querySelector('#template_card').content;
+  static template = document.querySelector('#template_product').content;
+  static popup = document.querySelector('.popup');
 
   constructor(props) {
     this._product = props.product;
@@ -8,20 +9,26 @@ export default class Product {
   }
 
   _addEventListeners(element) {
-    const button = element.querySelector('.button__cart');
-    const price = element.querySelector('.price').textContent;
-    const name = element.querySelector('.card__name').textContent;
+    const buttonBuy = element.querySelector('.button-cart');
+    const buttonInfo = element.querySelector('.product__button-info');
+    const price = element.querySelector('.product__price').textContent;
+    const name = element.querySelector('.product__name').textContent;
 
-    button.addEventListener('click', () => {
+    buttonBuy.addEventListener('click', () => {
       this._cart.render(price, name);
     });
+
+      // buttonInfo.addEventListener('click', () => {
+      //   Product.popup.classList.add('popup_opened');
+      // })
+
   }
- 
+
   render(card) {
     const clone = Product.template.cloneNode(true).children[0];
-    clone.querySelector('.image').src = card.src;
-    clone.querySelector('.card__name').textContent = card.name;
-    clone.querySelector('.price').textContent = `$${card.price}`;
+    clone.querySelector('.product__image').src = card.src;
+    clone.querySelector('.product__name').textContent = card.name;
+    clone.querySelector('.product__price').textContent = `$${card.price}`;
     this._addEventListeners(clone);
 
     this._container.append(clone);

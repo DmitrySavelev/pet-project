@@ -1,0 +1,6 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 250px;
+  border: 1px solid #000;
+}

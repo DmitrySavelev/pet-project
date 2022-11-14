@@ -1,0 +1,7 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 230px;
+  border: 2px solid #000;
+}
