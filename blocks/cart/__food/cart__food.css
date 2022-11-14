@@ -1,0 +1,9 @@
+.cart__food {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  gap: 30px;
+  margin-top: 10px;
+  background-color: #2f7cee;
+  padding: 0 10px;
+}

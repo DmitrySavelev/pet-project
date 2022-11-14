@@ -1,4 +1,4 @@
-const cards = [
+export const cards = [
 
   {
     src: './images/Hogwarts Castle.png',
@@ -10,13 +10,13 @@ const cards = [
     src: './images/titanic.png',
     name: 'Titanic',
     price: '680',
-    info: 'info2',
+    info: '110 years ago, shipbuilding history was made. After three years of the hard work of 15,000 people, the Titanic left the river Lagan in Belfast to begin its journey in Southampton. Nearly everything about the ship was a first. It was built in the biggest slipway of its time and even its center anchor was the largest ever forged, weighing in at 16 tonnes! It’s a story of determination, and here at The LEGO Group we’ve always been inspired by pioneers – by those who want to try harder, build bigger and test new waters. Which is why, 11 decades later, we’re paying tribute to one of history’s most important ships with one of our biggest LEGO sets ever created, the Titanic. At such a scale, it would almost be irresponsible of us not to lend a helping hand in how to display such an epic build! So, we’ve roped in some of our big-set-loving AFOLs (Adults Fans of LEGO) to help you with their top tips on how to display massive LEGO sets…',
   },
   {
     src: './images/spider-man.png',
     name: 'Spider-man',
     price: '35',
-    info: 'info3',
+    info: 'Put Spider-Man action into the hands of fans aged 8 and up with the LEGO® Marvel Spider-Man Figure (76226). Standing over 9.5 in. (24 cm) tall, this buildable take-anywhere toy brings Marvel-movie authenticity to kids’ Super Hero adventures. A Spidey of their own!Based on Spider-Man from the Marvel Universe, this fully jointed figure is just like the real thing. Using the web accessories included, kids can move and position their Spider-Man as they battle their way through endless exciting missions. When the day’s web-slinging action is over, the flexible figure looks great on display. The free LEGO Building Instructions app lets kids view, zoom and rotate the model as they build, giving them an amazing sense of immersion and interaction during the construction process.',
   },
   {
     src: './images/venom.png',
@@ -242,4 +242,4 @@ const cards = [
   // },
 ]
 
-export default cards;
+export const productContainer = document.querySelector('.cards');

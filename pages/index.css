@@ -1,160 +1,48 @@
-body {
-  width: 100%;
-}
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
 
-.page {
-  width: 100%;
-}
+@import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
 
-/* header header header header header header header header header header header header header header header  */
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__privateOffice/header__privateOffice.css);
 
-.header {
-  box-sizing: border-box;
-  height: 120px;
-  background-color: #ffcf00;
-  padding: 50px;
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
+@import url(../blocks/content/content.css);
 
-.logo {
-  height: 60px;
-  width: 60px;
-}
+@import url(../blocks/cards/cards.css);
 
-.links  {
-  font-size: 23px;
-  font-weight: 600;
-  display: flex;
-  gap: 60px;
-  margin-left: 30px;
-}
+@import url(../blocks/product/product.css);
+@import url(../blocks/product/__image/product__image.css);
+@import url(../blocks/product/__name/product__name.css);
+@import url(../blocks/product/__price/product__price.css);
+@import url(../blocks/product/__buttons-wrapper/product__buttons-wrapper.css);
 
-.link {
-  text-decoration: none;
-  color: #000;
-}
+@import url(../blocks/button-cart/button-cart.css);
+@import url(../blocks/button/button.css);
 
-.privateOffice {
-  margin-left: auto;
-}
+@import url(../blocks/cart/cart.css);
+@import url(../blocks/cart/__wrapper/cart__wrapper.css);
+@import url(../blocks/cart/__article/cart__article.css);
+@import url(../blocks/cart/__badge/cart__badge.css);
+@import url(../blocks/cart/__up/cart__up.css);
+@import url(../blocks/cart/__food/cart__food.css);
+@import url(../blocks/cart/__total/cart__total.css);
+@import url(../blocks/cart/__button-buy/cart__button-buy.css);
 
-/* content content content content content content content content content content content content content  */
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__button-close/popup__button-close.css);
 
-.content {
-  display: flex;
-  min-height: 100vh;
-}
 
-.cards {
-  display: flex;
-  padding: 30px;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-  gap: 30px;
-  justify-content: space-evenly;
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  height: 230px;
-  border: 2px solid #000;
-}
 
-.image {
-  width: 150px;
-  height: 150px;
-}
 
-.card__name {
-  text-align: center;
-  margin: 0;
-}
 
-.price {
-  text-align: center;
-  margin: 10px;
-}
 
-.button__cart {
-  background-color: #269846;
-  color: white;
-}
 
-button:hover {
-  cursor: pointer;
-  background-color: greenyellow;
-  color: black;
-}
 
-/* КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА КОРЗИНА*/
 
-.aside {
-  display: flex;
-  justify-content: center;
-  flex: 0 0 250px;
-  border: 1px solid #000;
-}
-
-.cart {
-  padding: 30px;
-  min-height: 200px;
-  width: 180px;
-}
-
-.cart__article {
-  margin: 8px 0 0 0;
-}
-
-.badge-cart {
-  width: 32px;
-  height: 32px;
-}
-
-.wrapper-cart {
-  background-color: rgb(238, 245, 31);
-  border: 2px solid #000;
-  display: flex;
-  padding: 10px;
-  gap: 30px;
-  justify-content: center;
-  border-radius: 5%;
-}
-
-.food {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #000;
-  gap: 30px;
-  margin-top: 10px;
-  background-color: #2f7cee;
-  padding: 0 10px;
-}
-
-.total {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #000;
-  gap: 30px;
-  margin-top: 30px;
-  background-color: rgb(238, 245, 31);
-  padding: 0 10px;
-}
-
-.button__buy {
-  margin-top: 30px;
-  justify-content: center;
-  background-color: #0d6747;
-  color: white;
-}
-
-.image-done {
-  display: none;
-}
-
-.image_opened {
-  display: inline;
-}

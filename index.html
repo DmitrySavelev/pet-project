@@ -10,53 +10,179 @@
 </head>
 <body>
   <div class="page">
-    <header class="header">
-      <img src="./images/logo.svg" alt="logo" class="logo">
-      <nav class="links">
-        <a href="#" class="link shop">Магазин</a>
-        <a href="#" class="link about">О нас</a>
-        <a href="#" class="link contacts">Контакты</a>
+    <!-- <header class="header">
+      <img src="./images/logo.svg" alt="logo" class="header__logo">
+      <nav class="header__links">
+        <a href="#" class="header__link shop">Магазин</a>
+        <a href="#" class="header__link about">О нас</a>
+        <a href="#" class="header__link contacts">Контакты</a>
       </nav>
-      <a href="#" class="privateOffice">
-        <img src="./images/lego-head.png" alt="private office" >
+      <a href="#" class="header__privateOffice">
+        <img src="./images/lego-head.png" alt="private office">
       </a>
-    </header>
+    </header> -->
     <main class="content">
       <section class="cards">
       </section>
-      <div class="image-done">
-        <img src="./images/done.png" alt="done">
-      </div>
-      <aside class="aside">
-        <div class="cart">
-          <div class="wrapper-cart">
+      <aside class="cart">
+        <div class="cart__wrapper">
+          <div class="cart__up">
             <h4 class="cart__article">Cart</h4>
-            <img src="./images/cart.png" alt="значок корзины" class="badge-cart">
+            <img src="./images/cart.png" alt="значок корзины" class="cart__badge">
           </div>
           <div class="container_foods">
           </div>
-          <div class="total">
+          <div class="cart__total">
             <span>Total (USD)</span>
-            <span class="total-price">$0</span>
+            <span class="cart__total-price">$0</span>
           </div>
-          <button class="button__buy" disabled>Купить</button>
+          <button class="cart__button-buy" disabled>Купить</button>
         </div>
       </aside>
+      <!-- <section class="popup">
+        <div class="popup__container">
+          <h4 class="popup__info-article">Info</h4>
+          <span class="popup__info-price">$0</span>
+          <p class="popup__info-text">some text</p>
+          <button class="button-cart">add to cart</button>
+          <button alt="close" class="popup__button-close"></button>
+        </div>
+      </section> -->
     </main>
-    <template id="template_card">
-      <div class="card">
-        <img src="images/2.jpg" alt="изображение товара" class="image">
-        <h4 class="card__name">Товар 1</h4>
-        <span class="price">$100</span>
-        <button class="button__cart">add to cart</button>
+    <template id="template_product">
+      <div class="product">
+        <img src="images/2.jpg" alt="изображение товара" class="product__image">
+        <h4 class="product__name">Товар 1</h4>
+        <span class="product__price">$100</span>
+        <div class="product__buttons-wrapper">
+          <button class="product__button-info">info</button>
+          <button class="button-cart">add to cart</button>
+        </div>
       </div>
     </template>
-    <template id="cart-template">
-      <div class="food">
-        <span class="cart__name">Товар 1</span>
+    <template id="template-cart">
+      <div class="cart__food">
+        <span class="cart__name">Товар</span>
         <span class="cart__price">$100</span>
       </div>
     </template>
   </div>
 </body>
 </html>
+<!-- <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesto</title>
+  <link rel="stylesheet" href="pages/index.css" />
+</head>
+<body class="root">
+  <div class="page">
+    <header class="header">
+      <img src="<%=require('./images/header__logo.svg')%>" alt="Надпись Mesto с индексом RUSSIA" class="header__logo" />
+    </header>
+    <main class="content">
+      <section class="profile">
+        <div class="profile__wrapper">
+          <img src="<%=require('./images/profile__avatar.jpg')%>" alt="аватарка человека" class="profile__avatar" />
+          <div class="profile__info">
+            <div class="profile__paragraph-btn">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button type="button" aria-label="редактировать" class="profile__edit-button"></button>
+            </div>
+            <p class="profile__job">Исследователь океана</p>
+          </div>
+        </div>
+        <button type="button" aria-label="добавить новую карточку" class="profile__add-button"></button>
+      </section>
+      <section class="elements">
+        <ul class="elements__card"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2022 Mesto Russia</p>
+    </footer>
+    <section class="popup popup_edit">
+      <div class="popup__container">
+        <button type="button" aria-label="закрыть попап" class="popup__button-close popup__button-close_edit"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="popupForm" class="popup__form popup__form_edit" novalidate>
+          <label class="popup__form-field">
+            <input name="inputName" type="text" id="name-input" class="popup__input popup__input_name"
+              placeholder="Ваше имя" minlength="2" maxlength="40" required />
+            <span class="popup__error name-input-error"></span>
+          </label>
+          <label class="popup__form-field">
+            <input name="inputJob" type="text" id="job-input" class="popup__input popup__input_job"
+              placeholder="Ваша специализация" minlength="2" maxlength="200" required />
+            <span class="popup__error job-input-error"></span>
+          </label>
+          <button type="submit" class="popup__button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <section class="popup popup_card">
+      <div class="popup__container">
+        <button type="button" aria-label="закрыть попап" class="popup__button-close popup__button-close_place"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form name="popupForm" class="popup__form popup__form_place" novalidate>
+          <label class="popup__form-field">
+            <input name="name" type="text" id="name-place-input" class="popup__input popup__name-input-place"
+              placeholder="Название" minlength="2" maxlength="30" required />
+            <span class="popup__error name-place-input-error"></span>
+          </label>
+          <label class="popup__form-field">
+            <input name="link" type="url" id="url-input" class="popup__input popup__link-input-place"
+              placeholder="Ссылка на картинку" required />
+            <span class="popup__error url-input-error"></span>
+          </label>
+          <button type="submit" class="popup__button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+    <section class="popup popup_zoom">
+      <figure class="popup__figure">
+        <button type="button" aria-label="закрыть изображение"
+          class="popup__button-close popup__button-close_image"></button>
+        <img src="#" alt="" class="popup__image" />
+        <figcaption class="popup__caption"></figcaption>
+      </figure>
+    </section>
+    <section class="popup popup_delete ">
+      <div class="popup__container_delete">
+        <button type="button" aria-label="закрыть попап" class="popup__button-close"></button>
+        <h2 class="popup__title_delete">Вы уверены?</h2>
+        <button class="popup__button_delete">Да</button>
+      </div>
+    </section>
+    <section class="popup popup_update">
+      <div class="popup__container_update">
+        <button type="button" aria-label="закрыть попап" class="popup__button-close"></button>
+        <h2 class="popup__title_update">Обновить аватар</h2>
+        <form name="popupForm" class="popup__form popup__form_update" novalidate>
+          <label class="popup__form-field">
+            <input name="link" type="url" id="url-input" class="popup__input popup__link-input-update"
+              placeholder="Ссылка на новую аватарку" required />
+            <span class="popup__error url-input-error"></span>
+          </label>
+          <button type="submit" class="popup__button">Сохранить</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <template id="template">
+    <li class="elements__list">
+      <div class="elements__wrapper">
+        <img class="elements__image" />
+        <button type="button" aria-label="удалить карточку" class="elements__delete"></button>
+      </div>
+      <div class="elements__text-content">
+        <h2 class="elements__title"></h2>
+        <button type="button" aria-label="поставить лайк" class="elements__like"></button>
+      </div>
+    </li>
+  </template>
+</body>
+</html> -->
