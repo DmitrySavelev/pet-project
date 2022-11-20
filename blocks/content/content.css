@@ -1,4 +1,6 @@
 .content {
   display: flex;
-  min-height: 100vh;
+  justify-content: end;
+  /* min-height: 100vh; */
+  /* padding-top: 120px; */
 }

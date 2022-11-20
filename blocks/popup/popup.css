@@ -7,7 +7,4 @@
   left: 0;
   height: 100%;
   width: 100%;
-  visibility: hidden;
-  /* opacity: 0; */
-  /* transition: visibility .25s, opacity .25s linear; */
 }

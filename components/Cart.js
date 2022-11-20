@@ -5,10 +5,11 @@ export default class Cart {
   static buttonBuy = document.querySelector('.cart__button-buy');
 
   constructor() {
+    this._obj = {};
     this._arr = [];
   }
 
-  getSum(price) {
+  _getTotalCost(price) {
     const priceByNumber = Number(price.slice(1));
     this._arr.push(priceByNumber);
     let sum = this._arr.reduce(function (sum, elem) {//сократить
@@ -24,17 +25,36 @@ export default class Cart {
       this._arr = [];
       Cart.totalPrice.textContent = 0;
       Cart.buttonBuy.disabled = true;
+      this._obj = {};
     })
   }
 
-  render(price, name) {
-    const clone = Cart.template.cloneNode(true).children[0];
-    clone.querySelector('.cart__name').textContent = name;
-    clone.querySelector('.cart__price').textContent = price;
+  _addToObj(name, price, id) {
+    if (!this._obj[id]) {
+      this._obj[id] = {
+        'name': name,
+        'price': price,
+        'count': 1,
+      }
+    } else {
+      this._obj[id]['count']++;
+    }
+  }
 
-    this.getSum(price)
+  render(price, name, id) {
+    Cart.container.innerHTML = '';
     Cart.buttonBuy.disabled = false;
+    this._addToObj(name, price, id);
+    this._getTotalCost(price)
 
-    Cart.container.append(clone);
+    for (let key in this._obj) {
+      const clone = Cart.template.cloneNode(true).children[0];
+      clone.querySelector('.cart__name').textContent = `${this._obj[key].name}`;
+      clone.querySelector('.cart__price').textContent = `${this._obj[key].price}`;
+      clone.querySelector('.cart__count').textContent = `${this._obj[key].count}`;
+      Cart.container.append(clone);
+    }
+    console.log(this._obj);
   }
 }
+

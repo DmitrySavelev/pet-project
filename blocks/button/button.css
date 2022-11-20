@@ -1,5 +1,5 @@
-button:hover {
+button:valid:hover {
   cursor: pointer;
-  background-color: greenyellow;
+  background-color: rgb(46, 217, 94);
   color: black;
 }
