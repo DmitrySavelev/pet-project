@@ -1,0 +1,13 @@
+.popup__info-container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 80%;
+  min-height: 330px;
+  max-height: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  padding: 34px 36px 37px;
+  display: flex;
+  border: 2px solid #000;
+}

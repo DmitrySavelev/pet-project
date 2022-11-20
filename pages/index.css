@@ -33,16 +33,57 @@
 @import url(../blocks/cart/__button-buy/cart__button-buy.css);
 
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__info-container/popup__info-container.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__button-close/popup__button-close.css);
+@import url(../blocks/popup/__info-image/popup__info-image.css);
+@import url(../blocks/popup/__caption/popup__caption.css);
+@import url(../blocks/popup/__info-text/popup__info-text.css);
+@import url(../blocks/popup/__content/popup__content.css);
 
+.cart__count {
+  padding: 0 5px;
+}
 
+.cart__minus {
+  margin-left: 5px;
+  height: 100%;
+  width: 24px;
+}
 
+.cart__plus {
+  margin: 0;
+  width: 24px;
+}
 
+.cart__name {
+  width: 115px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+.cart__delete {
+  background-image: url(../images/delete-foods.png);
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  margin-left: 10px;
+}
 
+.cart__delete:hover {
+  cursor: pointer;
+  background-color: rgb(46, 217, 94);
+  outline: 1px solid #000;
 
+}
 
-
-
+.cart__counter {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+.popup__info-text {
+  max-height: 50%;
+  overflow-y: auto;
+}
