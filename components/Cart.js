@@ -55,6 +55,7 @@ export default class Cart {
       Cart.container.append(clone);
     }
     console.log(this._obj);
+    console.log(this._obj);
   }
 }
 
