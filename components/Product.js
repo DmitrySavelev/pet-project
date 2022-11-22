@@ -42,6 +42,8 @@ export default class Product {
     clone.querySelector('.product__name').textContent = card.name;
     clone.querySelector('.product__price').textContent = `$${card.price}`;
     clone.setAttribute('data-id', card.id);
+    // clone.setAttribute('data-id', Number(card.id));
+    // console.log(clone);
 
     this._info = card.info;
     this._src = card.src;

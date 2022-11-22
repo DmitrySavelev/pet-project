@@ -21,25 +21,4 @@ cart.buttonBuyClickHandler();
 
 
 
-// function check(a, x) {
-
-// };
-
-// check([1, 2, 3], 2);//true
-// check([1, 2, 3], 4);//false
-
-// let arr = [1, 2, 3, 4, 5];
-
-// function check(arr, x) {
-//   arr.some(function (elem) {
-//     if (elem == x) {
-//       return true;
-//     }
-//     else {
-//       return false;
-//     }
-//   });
-// }
-
-// console.log(check(arr, 1));
 
